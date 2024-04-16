@@ -13,9 +13,7 @@ namespace CapaEntidades
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductoId
-        {
-            get; set;
-        }
+        { get; set; }
         [Required]
         [MaxLength(100)]
         public string Nombre { get; set; }

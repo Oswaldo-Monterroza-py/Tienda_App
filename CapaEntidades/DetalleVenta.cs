@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    internal class DetalleVenta
+    public class DetalleVenta
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -17,10 +17,12 @@ namespace CapaEntidades
         public int Cantidad { get; set; }
         [Required]
         public decimal Precio { get; set; }
+
         [Required]
         public int ProductoId { get; set; }
         [ForeignKey("ProductoId")]
         public Producto producto { get; set; }
+
         [Required]
         public int VentaId { get; set; }
         [ForeignKey("VentaId")]

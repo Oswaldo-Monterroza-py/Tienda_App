@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CapaEntidades
 {
-    internal class Venta
+    public class Venta
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,8 +20,9 @@ namespace CapaEntidades
 
 
 
-        //propiedades de navegacion
+        //propiedad de navegacion
         public List<DetalleVenta> Detalles { get; set; }
+
 
 
     }
