@@ -1,5 +1,6 @@
 using CapaEntidades;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Configuration;
 using System.Data.Entity;
@@ -22,6 +23,8 @@ namespace CapaDatos
         public virtual DbSet<Venta> Ventas { get; set;}
         public virtual DbSet<Producto> Productos { get; set; }
         public virtual DbSet<DetalleVenta> DetalleVentas { get; set; }
+        public virtual DbSet<Provedor> Provedores { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
 
     }
 }
