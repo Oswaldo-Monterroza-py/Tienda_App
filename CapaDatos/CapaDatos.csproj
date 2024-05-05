@@ -64,7 +64,9 @@
       <DependentUpon>202404172003080_First_Commit1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="ProductoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentaDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
